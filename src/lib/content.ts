@@ -1,153 +1,144 @@
-export const navItems = [
-  { name: "Hizmetler", link: "/#hizmetler" },
-  { name: "Çalışmalar", link: "/#calismalar" },
-  { name: "Nasıl çalışıyoruz", link: "/#surec" },
-  { name: "Paketler", link: "/#paketler" },
-  { name: "SSS", link: "/#sss" },
-];
+import type { NavItem } from "@/components/ui/resizable-navbar";
 
-export const utilityLinks = [
+export const navItems: NavItem[] = [
   { name: "Hakkımızda", link: "/#hakkimizda" },
-  { name: "Kariyer", link: "/#kariyer" },
-  { name: "İletişim", link: "/#iletisim" },
+  { name: "Hizmetler", link: "/#hizmetler" },
+  { name: "Başarı Hikayeleri", link: "/#basari-hikayeleri" },
+  { name: "Çözümler", link: "/#cozumler" },
+  { name: "Blog", link: "/#blog" },
 ];
 
-export const heroWords = [
-  "Satışlarınızı",
-  "Markanızı",
-  "Cironuzu",
-  "Taleplerinizi",
-  "Mağazanızı",
+export const hashtag = "#ölçülebilirbüyüme";
+
+// İş ortağı logo şeridi. Gerçek logolar gelene kadar metin işaretleri kullanılır.
+export const partnerMarks = [
+  "Lina Home",
+  "Derin Klinik",
+  "Kuzey Outdoor",
+  "Mavi Lojistik",
+  "Peri Kozmetik",
+  "Atlas Yazılım",
+  "Nova Mobilya",
+  "Ege Zeytin",
+  "Pera Optik",
+  "Mira Bebek",
+  "Toros Yapı",
+  "Vira Turizm",
 ];
 
-export const platforms = [
+export const platformPartners = [
   "Google Ads",
   "Meta",
   "TikTok",
   "LinkedIn",
-  "YouTube",
+  "Microsoft Ads",
   "Trendyol",
   "Hepsiburada",
   "Amazon",
-  "GA4",
+  "Google Analytics 4",
   "Looker Studio",
+  "Shopify",
+  "ikas",
 ];
 
-export const sectors = [
-  { title: "E-ticaret", text: "Moda, ev, kozmetik ve elektronik mağazaları" },
-  { title: "Sağlık", text: "Klinikler, poliklinikler ve sağlık turizmi" },
-  { title: "B2B ve sanayi", text: "Lojistik, üretim ve toptan satış" },
-  { title: "SaaS ve yazılım", text: "Deneme ve demo talebi toplayan ürünler" },
-  { title: "Eğitim", text: "Kurslar, okullar ve online eğitim platformları" },
-  { title: "Gayrimenkul", text: "Konut projeleri ve satış ofisleri" },
-];
-
-export const statements = [
+export const results = [
   {
-    title: "Görünür olun.",
-    text: "Müşterileriniz Google'da sizi aradığında ilk sayfada, Instagram'da kaydırırken akışında olun.",
-    links: [
-      { name: "SEO ve içerik", link: "/#hizmetler" },
-      { name: "Sosyal medya", link: "/#hizmetler" },
-    ],
+    title: "Büyüme danışmanlığı",
+    description:
+      "Kanal bazında bütçe dağılımı, aylık hedef metrikler ve hangi testin hangi sırayla yapılacağını gösteren 90 günlük plan.",
   },
   {
-    title: "Talep toplayın.",
-    text: "Reklamı tıklayan kişiyi tek bir hedefe odaklanan, hızlı açılan bir sayfaya getirin.",
-    links: [
-      { name: "Performans pazarlaması", link: "/#hizmetler" },
-      { name: "Açılış sayfaları", link: "/#hizmetler" },
-    ],
+    title: "Veri analitiği",
+    description:
+      "GA4 ve Google Tag Manager kurulumu, sunucu taraflı etiketleme ve KVKK uyumlu çerez onayı. Hangi kanalın satış getirdiğini tahminle değil, veriyle görürsünüz.",
   },
   {
-    title: "Satışa çevirin.",
-    text: "Hangi kanalın gerçekten sipariş getirdiğini ölçün, bütçeyi oraya kaydırın.",
-    links: [
-      { name: "Veri ve ölçümleme", link: "/#hizmetler" },
-      { name: "Pazaryeri yönetimi", link: "/#hizmetler" },
-    ],
+    title: "Dönüşüm optimizasyonu",
+    description:
+      "Ödeme adımlarındaki kayıpları ısı haritaları ve oturum kayıtlarıyla bulur, A/B testleriyle düzeltiriz. Trafiği artırmadan ciroyu artırmanın en kısa yolu.",
   },
-];
-
-export const stats = [
-  { value: "18 milyon ₺", label: "Her ay yönettiğimiz reklam bütçesi" },
-  { value: "42", label: "Aktif müşteri" },
-  { value: "3,4 yıl", label: "Ortalama müşteri birlikteliği" },
-];
-
-export const services = [
   {
-    key: "performans",
     title: "Performans pazarlaması",
     description:
-      "Google Ads (Arama, Performance Max, YouTube), Meta ve TikTok kampanyalarını sipariş başı maliyet ve ROAS hedefiyle kuruyor, her hafta teklif ve kreatif optimizasyonu yapıyoruz.",
-    tags: ["Google Ads", "Meta", "TikTok", "YouTube"],
-  },
-  {
-    key: "seo",
-    title: "SEO ve içerik",
-    description:
-      "Teknik SEO denetimi, kategori sayfası kurgusu ve anahtar kelime haritası. Sektörünüzü bilen editörlerle ayda 8 ila 12 uzman makale.",
-    tags: ["Teknik SEO", "Yerel SEO", "İçerik"],
-  },
-  {
-    key: "sosyal",
-    title: "Sosyal medya yönetimi",
-    description:
-      "Instagram, TikTok ve LinkedIn için aylık içerik takvimi, Reels çekim planı ve mesaj/yorum yönetimi.",
-    tags: ["Instagram", "TikTok", "LinkedIn"],
-  },
-  {
-    key: "pazaryeri",
-    title: "Pazaryeri yönetimi",
-    description:
-      "Trendyol, Hepsiburada ve Amazon Türkiye mağazalarında ürün içerikleri, fiyat takibi ve pazaryeri reklamları.",
-    tags: ["Trendyol", "Hepsiburada", "Amazon"],
-  },
-  {
-    key: "olcumleme",
-    title: "Veri ve ölçümleme",
-    description:
-      "GA4 ve Google Tag Manager kurulumu, sunucu taraflı etiketleme, KVKK uyumlu çerez onayı ve Looker Studio panelleri. Hangi kanalın satış getirdiğini tahminle değil, veriyle görürsünüz.",
-    tags: ["GA4", "GTM", "Looker Studio"],
-  },
-  {
-    key: "web",
-    title: "Web ve açılış sayfaları",
-    description:
-      "Mobilde 2 saniyenin altında açılan, tek bir hedefe odaklanan kampanya sayfaları ve A/B testleri.",
-    tags: ["Next.js", "A/B testi", "CRO"],
+      "Google Ads, Meta, TikTok ve pazaryeri reklamlarını sipariş başı maliyet ve ROAS hedefiyle yönetir, her pazartesi tek sayfalık rapor göndeririz.",
   },
 ];
 
-export const processSteps = [
+export const measureCards = [
   {
-    step: "01",
-    title: "Ücretsiz hesap analizi",
-    duration: "48 saat",
-    description:
-      "Reklam hesaplarınıza ve GA4 mülkünüze okuma yetkisiyle bakıyor; boşa giden harcamayı, eksik dönüşüm takibini ve hızlı kazanımları tek bir PDF'te listeliyoruz.",
+    title: "Tek tabloda tüm kanallar",
+    text: "Google, Meta, TikTok ve pazaryeri harcamaları ile GA4 gelirini her sabah otomatik birleştiren Looker Studio paneli.",
   },
   {
-    step: "02",
-    title: "90 günlük plan",
-    duration: "1. hafta",
-    description:
-      "Kanal bazında bütçe dağılımı, aylık hedef metrikler ve hangi testlerin hangi sırayla yapılacağı. Planı birlikte onaylamadan işe başlamıyoruz.",
+    title: "Gerçek dönüşüm takibi",
+    text: "Tarayıcı engellerinden etkilenmeyen sunucu taraflı etiketleme ile kaybolan dönüşümlerin önemli bir kısmını geri kazanırız.",
   },
   {
-    step: "03",
-    title: "Uygulama ve haftalık rapor",
-    duration: "2. haftadan itibaren",
+    title: "Haftalık karar notu",
+    text: "Rakamların yanında neyi neden değiştirdiğimizi ve gelecek haftanın planını iki paragrafta yazarız.",
+  },
+];
+
+export const solutions = [
+  {
+    name: "ACK Pulse",
+    tagline: "Kampanya ve bütçe takibi",
     description:
-      "Kampanyalar, içerikler ve ölçümleme altyapısı devreye alınır. Her pazartesi harcama, gelir ve yapılan değişiklikleri içeren kısa bir rapor gelir.",
+      "Tüm reklam hesaplarınızın harcamasını ve aylık bütçe hedefini tek ekranda izleyin; sapma olduğunda e-posta ve Slack bildirimi alın.",
+    features: [
+      { title: "Bütçe temposu", text: "Ay sonuna kadar bütçenin bitip bitmeyeceğini günlük tahmin eder." },
+      { title: "Anomali uyarısı", text: "Tıklama maliyeti ya da dönüşüm oranı bir günde %25'ten fazla değişirse haber verir." },
+      { title: "Stok bağlantısı", text: "Tükenen ürünlerin reklamlarını otomatik durdurur." },
+      { title: "Haftalık özet", text: "Pazartesi sabahı yönetime gidecek tek sayfalık PDF'i hazırlar." },
+    ],
   },
   {
-    step: "04",
-    title: "Aylık strateji toplantısı",
-    duration: "Her ay",
+    name: "ACK Merge",
+    tagline: "Çapraz kanal veri birleştirme",
     description:
-      "Neyin çalıştığını, neyin durdurulduğunu ve gelecek ayın bütçe önerisini 45 dakikalık bir toplantıda konuşuruz.",
+      "Reklam, CRM, e-ticaret ve pazaryeri verilerini tek bir BigQuery tablosunda toplar; her siparişi kaynağıyla eşleştirir.",
+    features: [
+      { title: "30'dan fazla kaynak", text: "Google, Meta, TikTok, Trendyol, Hepsiburada, ikas, Shopify ve daha fazlası." },
+      { title: "Net kâr görünümü", text: "Ürün maliyeti ve iadeleri düşerek kanal başına net kârı hesaplar." },
+      { title: "Müşteri yaşam boyu değeri", text: "İlk siparişi hangi kanaldan gelen müşterinin daha çok tekrar aldığını gösterir." },
+      { title: "Hazır panolar", text: "Yönetim, pazarlama ve satış ekipleri için üç ayrı Looker Studio panosu." },
+    ],
+  },
+  {
+    name: "ACK Scribe",
+    tagline: "Yapay zeka destekli SEO içerik",
+    description:
+      "Arama verisinden konu çıkarır, editörlerimiz için taslak hazırlar. Yayına giden her yazı bir uzman tarafından kontrol edilir.",
+    features: [
+      { title: "Konu haritası", text: "Rakiplerin sıralandığı ama sizin olmadığınız sorguları listeler." },
+      { title: "Taslak ve brif", text: "Başlık yapısı, iç bağlantı önerileri ve SSS bloğuyla editör brifi oluşturur." },
+      { title: "Editör onayı", text: "Yapay zeka taslağı doğrudan yayınlamaz; sektörünüzü bilen editör düzenler." },
+      { title: "Performans takibi", text: "Yayından 30 ve 90 gün sonra sıralama ve trafik raporu gönderir." },
+    ],
+  },
+];
+
+export const posts = [
+  {
+    category: "Ölçümleme",
+    title: "Sunucu taraflı etiketleme: kaybolan dönüşümleri geri almak",
+    excerpt: "Tarayıcı engelleri yüzünden GA4'te görünmeyen siparişleri nasıl geri kazandığımızı adım adım anlattık.",
+    date: "18 Kasım 2026",
+    readTime: "7 dk",
+  },
+  {
+    category: "E-ticaret",
+    title: "Performance Max'te kâr marjına göre kampanya ayırmak",
+    excerpt: "Tek kampanyada tüm ürünleri yarıştırmak yerine marj gruplarıyla çalışınca ROAS neden yükseliyor?",
+    date: "4 Kasım 2026",
+    readTime: "9 dk",
+  },
+  {
+    category: "Pazaryeri",
+    title: "Trendyol reklamlarında stok bağlantısı neden şart?",
+    excerpt: "Tükenen ürüne harcanan bütçeyi bir müşterimizde ayda 60 bin liradan sıfıra indirdik.",
+    date: "21 Ekim 2026",
+    readTime: "5 dk",
   },
 ];
 
@@ -211,108 +202,6 @@ export const caseStudies = [
       { value: "4,8 kat", label: "Organik trafik (12 ay)" },
       { value: "+%212", label: "Demo talebi" },
     ],
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "İlk ay hiçbir kampanyayı büyütmediler; önce dönüşüm takibimizin yarısının çalışmadığını gösterdiler. O düzeltme tek başına bütçemizin yerini değiştirdi.",
-    name: "Elif Karaca",
-    title: "E-ticaret Müdürü, Lina Home",
-  },
-  {
-    quote:
-      "Pazartesi raporları iki sayfa ve neyin neden değiştiğini düz bir dille anlatıyor. Ajansla toplantı sayısını azalttık, sonuçlar arttı.",
-    name: "Dr. Mert Aydın",
-    title: "Kurucu, Derin Diş Kliniği",
-  },
-  {
-    quote:
-      "Pazaryerinde stok bitince reklamın da durması çok basit bir fikir ama kimse yapmamıştı. Aylık 60 bin liralık boşa harcamayı kesti.",
-    name: "Burak Şen",
-    title: "Genel Müdür, Kuzey Outdoor",
-  },
-  {
-    quote:
-      "LinkedIn'den gelen talepler artık doğrudan CRM'e düşüyor ve satış ekibi 15 dakika içinde arıyor. Kapanış oranımız iki katına çıktı.",
-    name: "Selin Öztürk",
-    title: "Pazarlama Direktörü, Mavi Lojistik",
-  },
-  {
-    quote:
-      "Reklam hesapları baştan beri bizim adımıza açıldı. Bir gün ayrılsak bile hiçbir veriyi kaybetmeyeceğimizi bilmek güven veriyor.",
-    name: "Can Yıldız",
-    title: "Kurucu Ortak, Atlas Yazılım",
-  },
-];
-
-export const packages = [
-  {
-    name: "Başlangıç",
-    price: "45.000 ₺",
-    period: "/ ay",
-    description: "Tek kanalda düzenli büyümek isteyen KOBİ'ler için.",
-    features: [
-      "Google Ads veya Meta reklam yönetimi",
-      "GA4 ve dönüşüm takibi kurulumu",
-      "Haftalık performans raporu",
-      "Aylık strateji toplantısı",
-    ],
-    highlighted: false,
-    cta: "Başlangıç paketini sor",
-  },
-  {
-    name: "Büyüme",
-    price: "85.000 ₺",
-    period: "/ ay",
-    description: "Birden fazla kanalı birlikte yönetmek isteyen e-ticaret markaları için.",
-    features: [
-      "Google Ads, Meta ve TikTok reklam yönetimi",
-      "Aylık 8 SEO makalesi ve teknik SEO",
-      "Sunucu taraflı etiketleme",
-      "Looker Studio canlı paneli",
-      "Ayda 2 açılış sayfası testi",
-    ],
-    highlighted: true,
-    cta: "Büyüme paketini sor",
-  },
-  {
-    name: "Kurumsal",
-    price: "Teklif",
-    period: "",
-    description: "Aylık 1 milyon ₺ üzeri reklam bütçesi olan markalar için.",
-    features: [
-      "Tüm kanallar ve pazaryerleri",
-      "Size özel 4 kişilik ekip",
-      "Pazarlama karması modellemesi",
-      "Üç aylık yönetim sunumu",
-    ],
-    highlighted: false,
-    cta: "Teklif iste",
-  },
-];
-
-export const faqs = [
-  {
-    q: "Minimum sözleşme süresi var mı?",
-    a: "İlk dönem 3 aydır, çünkü reklam algoritmalarının öğrenmesi ve SEO çalışmalarının sonuç vermesi bu kadar sürer. Sonrasında sözleşme aylık devam eder ve 30 gün önceden haber vererek sonlandırabilirsiniz.",
-  },
-  {
-    q: "Reklam hesapları kimin adına açılıyor?",
-    a: "Her zaman sizin adınıza. Biz yönetici yetkisiyle çalışırız; çalışma bittiğinde yetkimizi kaldırmanız yeterlidir, geçmiş veriler sizde kalır.",
-  },
-  {
-    q: "Paket fiyatlarına reklam bütçesi dahil mi?",
-    a: "Hayır. Fiyatlar yalnızca hizmet bedelidir ve KDV hariçtir. Reklam bütçesi doğrudan sizin kartınızdan Google, Meta veya TikTok'a ödenir.",
-  },
-  {
-    q: "Sonuçları ne zaman görmeye başlarız?",
-    a: "Ücretli reklamlarda ilk iyileşmeler genellikle 3 ila 6 hafta içinde görülür. SEO'da anlamlı trafik artışı çoğunlukla 4. aydan sonra başlar. 90 günlük planda her ay için beklediğimiz rakamları yazılı olarak paylaşırız.",
-  },
-  {
-    q: "Hangi sektörlerle çalışmıyorsunuz?",
-    a: "Bahis, kripto para alım satımı ve reçeteli ilaç satışı gibi reklam politikalarının sık değiştiği ya da yasal riski yüksek alanlarda çalışmıyoruz.",
   },
 ];
 

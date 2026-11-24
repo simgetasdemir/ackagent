@@ -15,7 +15,7 @@ type Status =
   | { state: "error"; message: string };
 
 const selectClass =
-  "flex h-10 w-full appearance-none rounded-md border-none bg-white px-3 text-sm text-navy shadow-[0px_0px_1px_1px_#c9cfe0] focus-visible:ring-[2px] focus-visible:ring-cobalt/40 focus-visible:outline-none";
+  "flex h-10 w-full appearance-none rounded-md border-none bg-zinc-800 px-3 text-sm text-cream shadow-[0px_0px_1px_1px_#404040] focus-visible:ring-[2px] focus-visible:ring-accent/40 focus-visible:outline-none";
 
 function Field({
   id,
@@ -77,7 +77,7 @@ export function Contact() {
   }
 
   return (
-    <section id="iletisim" className="bg-surface py-24">
+    <section id="iletisim" className="border-t border-white/10 bg-ink-3 py-28">
       <Container className="grid gap-12 lg:grid-cols-[1fr_1.2fr]">
         <div>
           <SectionHeading
@@ -93,20 +93,20 @@ export function Contact() {
               ["Çalışma saatleri", contact.hours],
             ].map(([k, v]) => (
               <div key={k}>
-                <dt className="text-navy/60">{k}</dt>
-                <dd className="mt-1 font-semibold text-navy">{v}</dd>
+                <dt className="text-cream/60">{k}</dt>
+                <dd className="mt-1 font-semibold text-cream">{v}</dd>
               </div>
             ))}
           </dl>
         </div>
 
-        <div className="rounded-3xl bg-white p-6 md:p-10">
+        <div className="rounded-3xl border border-white/10 bg-ink-2 p-6 md:p-10">
           {status.state === "done" ? (
             <div className="flex min-h-80 flex-col items-start justify-center">
-              <p className="text-2xl font-bold text-navy">Talebiniz alındı</p>
-              <p className="mt-3 text-sm text-navy/70">{status.message}</p>
+              <p className="text-2xl font-bold text-cream">Talebiniz alındı</p>
+              <p className="mt-3 text-sm text-cream/70">{status.message}</p>
               <Button
-                variant="outline"
+                variant="secondary"
                 className="mt-6"
                 onClick={() => setStatus({ state: "idle" })}
               >
@@ -165,8 +165,8 @@ export function Contact() {
               </Field>
               <input type="text" name="fax" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
               <div>
-                <label className="flex items-start gap-3 text-sm text-navy/70">
-                  <input type="checkbox" name="kvkk" className="mt-0.5 size-4 accent-cobalt" />
+                <label className="flex items-start gap-3 text-sm text-cream/70">
+                  <input type="checkbox" name="kvkk" className="mt-0.5 size-4 accent-accent" />
                   Kişisel verilerimin talebime yanıt verilmesi amacıyla işlenmesini kabul ediyorum (KVKK aydınlatma metni).
                 </label>
                 {errors.kvkk?.[0] && (
@@ -178,7 +178,7 @@ export function Contact() {
                   {status.message}
                 </p>
               )}
-              <Button type="submit" size="lg" className="w-full" disabled={status.state === "sending"}>
+              <Button type="submit" size="lg" variant="accent" className="w-full" disabled={status.state === "sending"}>
                 {status.state === "sending" && <IconLoader2 className="size-4 animate-spin" />}
                 {status.state === "sending" ? "Gönderiliyor" : "Analiz talebini gönder"}
               </Button>

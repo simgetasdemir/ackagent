@@ -37,7 +37,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 block h-full w-full rounded-3xl bg-surface"
+                className="absolute inset-0 block h-full w-full rounded-3xl bg-white/[0.06]"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -45,22 +45,22 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <div className="relative z-20 h-full w-full overflow-hidden rounded-2xl border border-navy/10 bg-white p-4 group-hover:border-cobalt/30">
+          <div className="relative z-20 h-full w-full overflow-hidden rounded-2xl border border-cream/10 bg-ink-2 p-4 group-hover:border-accent/30">
             <div className="p-4">
-              <p className="text-xs font-semibold tracking-wide text-cobalt uppercase">
+              <p className="text-xs font-semibold tracking-wide text-accent-300 uppercase">
                 {item.meta}
               </p>
-              <h4 className="mt-3 text-xl font-bold text-navy">
+              <h4 className="mt-3 text-xl font-bold text-cream">
                 {item.title}
               </h4>
-              <p className="mt-4 text-sm leading-relaxed text-navy/70">
+              <p className="mt-4 text-sm leading-relaxed text-cream/70">
                 {item.description}
               </p>
-              <dl className="mt-6 grid grid-cols-2 gap-4 border-t border-navy/10 pt-6">
+              <dl className="mt-6 grid grid-cols-2 gap-4 border-t border-cream/10 pt-6">
                 {item.metrics.map((m) => (
                   <div key={m.label}>
-                    <dt className="text-xs text-navy/60">{m.label}</dt>
-                    <dd className="mt-1 text-2xl font-bold text-navy">
+                    <dt className="text-xs text-cream/60">{m.label}</dt>
+                    <dd className="mt-1 text-2xl font-bold text-cream">
                       {m.value}
                     </dd>
                   </div>

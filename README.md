@@ -4,7 +4,7 @@ ACK Dijital Ajans'ın tanıtım sitesi. Tek bir Next.js uygulaması:
 
 - **Frontend:** Next.js 16 (App Router) + React 19, Tailwind CSS 4
 - **Backend:** Next.js Route Handler, `POST /api/iletisim` (zod ile doğrulama, IP başına hız sınırı, bot tuzağı). Başvurular şimdilik `data/leads.json` dosyasına yazılır.
-- **Arayüz:** Aceternity UI bileşenlerinden uyarlandı (Resizable Navbar, Flip Words, Bento Grid, Card Hover Effect, Infinite Moving Cards, Signup Form girdileri). Animasyonlar `motion` paketiyle (`motion/react`).
+- **Arayüz:** Koyu tema; bölüm yapısı analyticahouse.com/tr düzeninden esinlenildi (hero, iş ortağı şeridi, veri odaklı sonuçlar, logo duvarı, ölçümleme, yapay zeka çözümleri, kapanış bandı). Bileşenler Aceternity UI'dan uyarlandı: Resizable Navbar, Spotlight, Card Hover Effect, Flip Words, Signup Form girdileri. Animasyonlar `motion` paketiyle (`motion/react`).
 - **Yazı tipi:** Inter (`next/font/google`, Türkçe karakterler için `latin-ext` dahil).
 
 ## Sürümler
@@ -46,7 +46,7 @@ src/
 
 ## Tasarım kuralları
 
-- Tüm butonlar `components/ui/button.tsx` üzerinden gelir: hap şekli, `text-sm font-semibold`, `border-2`, yükseklik `h-10` veya `h-12`. Dolgulu ve kenarlıklı butonlar aynı kalınlıktadır.
+- Tüm butonlar `components/ui/button.tsx` üzerinden gelir: hap şekli, `text-sm font-semibold`, 1px kenarlık, yükseklik `h-10` veya `h-12`. Dolgulu ve kenarlıklı butonlar aynı kalınlıktadır.
 - Header, logo ve içerik aynı `max-w-7xl px-4` kapsayıcısını kullanır; sol ve sağ kenarlar sayfanın geri kalanıyla hizalıdır.
 
 ## Notlar

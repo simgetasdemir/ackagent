@@ -26,7 +26,7 @@ export const Input = React.forwardRef<
   return (
     <motion.div
       style={{
-        background: useMotionTemplate`radial-gradient(${visible ? radius + "px" : "0px"} circle at ${mouseX}px ${mouseY}px, #2340f5, transparent 80%)`,
+        background: useMotionTemplate`radial-gradient(${visible ? radius + "px" : "0px"} circle at ${mouseX}px ${mouseY}px, #ec5fa0, transparent 80%)`,
       }}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setVisible(true)}
@@ -36,7 +36,7 @@ export const Input = React.forwardRef<
       <input
         type={type}
         className={cn(
-          "flex h-10 w-full rounded-md border-none bg-white px-3 py-2 text-sm text-navy shadow-[0px_0px_1px_1px_#c9cfe0] transition duration-400 placeholder:text-navy/40 focus-visible:ring-[2px] focus-visible:ring-cobalt/40 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 group-hover/input:shadow-none",
+          "flex h-10 w-full rounded-md border-none bg-zinc-800 px-3 py-2 text-sm text-cream shadow-[0px_0px_1px_1px_#404040] transition duration-400 placeholder:text-neutral-500 focus-visible:ring-[2px] focus-visible:ring-accent/40 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 group-hover/input:shadow-none",
           className,
         )}
         ref={ref}
@@ -55,7 +55,7 @@ export const Textarea = React.forwardRef<
     <textarea
       ref={ref}
       className={cn(
-        "flex min-h-28 w-full rounded-md border-none bg-white px-3 py-2 text-sm text-navy shadow-[0px_0px_1px_1px_#c9cfe0] placeholder:text-navy/40 focus-visible:ring-[2px] focus-visible:ring-cobalt/40 focus-visible:outline-none",
+        "flex min-h-28 w-full rounded-md border-none bg-zinc-800 px-3 py-2 text-sm text-cream shadow-[0px_0px_1px_1px_#404040] placeholder:text-neutral-500 focus-visible:ring-[2px] focus-visible:ring-accent/40 focus-visible:outline-none",
         className,
       )}
       {...props}
@@ -69,7 +69,7 @@ export const Label = ({
   ...props
 }: React.LabelHTMLAttributes<HTMLLabelElement>) => (
   <label
-    className={cn("text-sm leading-none font-semibold text-navy", className)}
+    className={cn("text-sm leading-none font-semibold text-cream", className)}
     {...props}
   />
 );

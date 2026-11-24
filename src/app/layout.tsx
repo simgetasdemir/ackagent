@@ -11,15 +11,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ACK Dijital Ajans | Performans pazarlaması, SEO ve sosyal medya",
+  title: "ACK Dijital Ajans | Veri odaklı dijital pazarlama",
   description:
-    "İstanbul merkezli dijital pazarlama ajansı. Google Ads, Meta, TikTok, SEO, pazaryeri yönetimi ve GA4 ölçümleme hizmetleri.",
+    "Performans pazarlaması, veri analitiği, dönüşüm optimizasyonu ve yapay zeka destekli çözümler. ACK Dijital Ajans, İstanbul.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="tr" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full bg-white font-sans text-navy">{children}</body>
+      <body className="min-h-full bg-ink font-sans text-cream">{children}</body>
     </html>
   );
 }

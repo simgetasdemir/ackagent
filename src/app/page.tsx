@@ -1,17 +1,15 @@
+import { Blog } from "@/components/sections/blog";
 import { CaseStudies } from "@/components/sections/case-studies";
+import { ClientsWall } from "@/components/sections/clients-wall";
+import { Closing } from "@/components/sections/closing";
 import { Contact } from "@/components/sections/contact";
-import { CtaPanels } from "@/components/sections/cta-panels";
-import { Explore } from "@/components/sections/explore";
-import { Faq } from "@/components/sections/faq";
 import { Footer } from "@/components/sections/footer";
 import { Header } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
-import { Packages } from "@/components/sections/packages";
-import { Process } from "@/components/sections/process";
-import { Services } from "@/components/sections/services";
-import { Statements } from "@/components/sections/statements";
-import { Stats } from "@/components/sections/stats";
-import { Testimonials } from "@/components/sections/testimonials";
+import { Measure } from "@/components/sections/measure";
+import { PartnersMarquee } from "@/components/sections/partners-marquee";
+import { Results } from "@/components/sections/results";
+import { Solutions } from "@/components/sections/solutions";
 
 export default function Home() {
   return (
@@ -19,16 +17,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Explore />
-        <Statements />
-        <Stats />
-        <Services />
+        <PartnersMarquee />
+        <Results />
+        <ClientsWall />
+        <Measure />
+        <Solutions />
         <CaseStudies />
-        <Testimonials />
-        <Process />
-        <Packages />
-        <Faq />
-        <CtaPanels />
+        <Blog />
+        <Closing />
         <Contact />
       </main>
       <Footer />
