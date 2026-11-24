@@ -116,39 +116,20 @@ export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick:
   </button>
 );
 
-// ACK Agency işareti: yükselen çapraz çizgili bir "A" (büyüme) ve sağ üstte
-// sinyal veren bir veri noktası (ölçümleme). Performans ve ölçümleme odağını anlatır.
-export const LogoMark = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 32 32" className={cn("size-8", className)} aria-hidden="true">
-    <defs>
-      <linearGradient id="ack-mark-bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stopColor="#6d93ff" />
-        <stop offset="1" stopColor="#2f55e6" />
-      </linearGradient>
-      <linearGradient id="ack-mark-shine" x1="16" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stopColor="#ffffff" stopOpacity="0.35" />
-        <stop offset="1" stopColor="#ffffff" stopOpacity="0" />
-      </linearGradient>
-    </defs>
-    <rect width="32" height="32" rx="9" fill="url(#ack-mark-bg)" />
-    <rect x="0.5" y="0.5" width="31" height="31" rx="8.5" fill="url(#ack-mark-shine)" stroke="#ffffff" strokeOpacity="0.18" />
-    <path d="M7.5 24.5 14.5 9l7 15.5" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M10.6 19.2 18.4 16" fill="none" stroke="#ffffff" strokeOpacity="0.6" strokeWidth="2.4" strokeLinecap="round" />
-    <circle cx="24.5" cy="8.5" r="4" fill="#ffffff" fillOpacity="0.22" />
-    <circle cx="24.5" cy="8.5" r="2.2" fill="#ffffff" />
-  </svg>
-);
-
+// ACK Agency logosu: simgesiz, küçük harfli "ack" yazısı ve vurgu renginde
+// bir nokta; yanında küçük, aralıklı "AGENCY" etiketi.
 export const NavbarLogo = () => (
   <Link
     href="/"
     aria-label="ACK Agency ana sayfa"
-    className="group flex h-10 shrink-0 items-center gap-2.5"
+    className="group flex h-10 shrink-0 items-center gap-2"
   >
-    <LogoMark className="transition duration-300 group-hover:-rotate-6 group-hover:drop-shadow-[0_0_12px_rgba(79,124,255,0.6)]" />
-    <span className="flex items-baseline gap-1.5 text-[17px] leading-none tracking-tight">
-      <span className="font-extrabold text-white">ACK</span>
-      <span className="font-medium text-neutral-400 transition group-hover:text-neutral-200">Agency</span>
+    <span className="text-[26px] leading-none font-extrabold tracking-[-0.05em] text-white">
+      ack
+      <span className="text-accent transition duration-300 group-hover:text-accent-300">.</span>
+    </span>
+    <span className="mt-1.5 text-[11px] leading-none font-medium tracking-[0.18em] text-neutral-400 transition group-hover:text-neutral-200">
+      AGENCY
     </span>
   </Link>
 );
