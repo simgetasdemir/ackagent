@@ -7,7 +7,7 @@ export function Blog() {
   return (
     <section id="blog" className="border-t border-white/10 py-28">
       <Container>
-        <SectionHeading eyebrow="Blog" title="Sahadan notlar" description="Müşteri hesaplarında denediğimiz ve işe yarayan yöntemleri yazıyoruz." />
+        <SectionHeading eyebrow="Blog" title="Sahadan notlar" description="Ölçümleme ve user acquisition üzerine sahada öğrendiklerimizi yazıyoruz." />
         <div className="mt-14 grid gap-4 md:grid-cols-3">
           {posts.map((p) => (
             <Link

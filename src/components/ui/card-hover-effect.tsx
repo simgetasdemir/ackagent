@@ -60,7 +60,7 @@ export const HoverEffect = ({
                 {item.metrics.map((m) => (
                   <div key={m.label}>
                     <dt className="text-xs text-cream/60">{m.label}</dt>
-                    <dd className="mt-1 text-2xl font-bold text-cream">
+                    <dd className="mt-1 text-xl font-bold whitespace-nowrap text-cream">
                       {m.value}
                     </dd>
                   </div>

@@ -23,12 +23,12 @@ export function Hero() {
           Dijitalde ölçülebilir büyüme
         </h1>
         <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-neutral-300 md:text-xl">
-          Veriyi okuyor, büyüme odaklı pazarlama stratejisine dönüştürüyoruz.
-          Reklam, analitik ve içerik tek ekipte; sonuç tek raporda.
+          Performans pazarlaması ve user acquisition ajansı. Analytics, tag
+          manager, MMP ve SKAN kurulumundan kampanya yönetimine kadar tek ekip.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <ButtonLink href="/#basari-hikayeleri" size="lg" className="w-full sm:w-auto">
-            Başarı hikayeleri
+          <ButtonLink href="/#hizmetler" size="lg" className="w-full sm:w-auto">
+            Hizmetleri inceleyin
             <IconArrowRight className="size-4" stroke={2.25} />
           </ButtonLink>
           <ButtonLink href="/#blog" size="lg" variant="secondary" className="w-full sm:w-auto">

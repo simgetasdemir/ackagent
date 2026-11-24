@@ -1,5 +1,5 @@
 import { Blog } from "@/components/sections/blog";
-import { CaseStudies } from "@/components/sections/case-studies";
+import { Setups } from "@/components/sections/case-studies";
 import { ClientsWall } from "@/components/sections/clients-wall";
 import { Closing } from "@/components/sections/closing";
 import { Contact } from "@/components/sections/contact";
@@ -22,7 +22,7 @@ export default function Home() {
         <ClientsWall />
         <Measure />
         <Solutions />
-        <CaseStudies />
+        <Setups />
         <Blog />
         <Closing />
         <Contact />

@@ -12,11 +12,11 @@ export function Closing() {
           Dijitalde ölçülebilir büyüme
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-neutral-300">
-          Hesaplarınıza 48 saat içinde ücretsiz bir göz atalım; boşa giden harcamayı ve hızlı kazanımları yazılı olarak paylaşalım.
+          Ölçümleme altyapınızı 48 saat içinde ücretsiz inceleyelim; eksik event&apos;leri, MMP ve SKAN sorunlarını yazılı olarak paylaşalım.
         </p>
         <div className="mt-10 flex justify-center">
           <ButtonLink href="/#iletisim" size="lg" variant="accent">
-            Ücretsiz analiz isteyin
+            Ücretsiz ölçüm denetimi isteyin
           </ButtonLink>
         </div>
       </Container>
