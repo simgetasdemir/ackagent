@@ -23,7 +23,7 @@ export const channels = [
   "Moloco",
   "Liftoff",
   "Google Ads",
-  "Microsoft Ads",
+  "Bing Ads",
 ];
 
 // Logo duvarı: kurulum ve entegrasyonunu yaptığımız ölçümleme araçları.
