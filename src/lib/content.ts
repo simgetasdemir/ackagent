@@ -12,9 +12,10 @@ export const hashtag = "#ölçülebilirbüyüme";
 
 // Kayan şerit: reklam yaptığımız kanallar ve ağlar.
 export const channels = [
+  "Google Ads",
+  "Meta Ads",
   "Google App Campaigns",
   "Apple Search Ads",
-  "Meta Ads",
   "TikTok Ads",
   "Snapchat Ads",
   "Unity Ads",
@@ -22,7 +23,6 @@ export const channels = [
   "Mintegral",
   "Moloco",
   "Liftoff",
-  "Google Ads",
   "Bing Ads",
 ];
 
@@ -43,6 +43,16 @@ export const integrations = [
 ];
 
 export const results = [
+  {
+    title: "Google Ads kurulumu",
+    description:
+      "Search, Performance Max, Shopping, YouTube ve App kampanyaları için hesap yapısı, dönüşüm işlemleri, gelişmiş dönüşümler, Merchant Center bağlantısı ve hedef CPA ya da ROAS teklif stratejisi.",
+  },
+  {
+    title: "Meta Ads kurulumu",
+    description:
+      "Business Manager ve reklam hesabı düzeni, Meta Pixel ile Conversions API, alan adı doğrulama, Aggregated Event Measurement önceliği, katalog ve Advantage+ kampanya yapısı.",
+  },
   {
     title: "User acquisition",
     description:
@@ -132,6 +142,26 @@ export const solutions = [
 // Kurulum paketleri (HoverEffect kartlarında gösterilir).
 export const setups = [
   {
+    meta: "Google Ads",
+    title: "Google Ads hesap kurulumu",
+    description:
+      "Kampanya ve reklam grubu yapısı, dönüşüm işlemleri, gelişmiş dönüşümler, GA4 ve Merchant Center bağlantısı, negatif anahtar kelime listeleri ve teklif stratejisi.",
+    metrics: [
+      { value: "5 iş günü", label: "Teslim süresi" },
+      { value: "Search + PMax", label: "Kapsam" },
+    ],
+  },
+  {
+    meta: "Meta Ads",
+    title: "Meta Ads hesap kurulumu",
+    description:
+      "Business Manager ve izinler, Pixel ile Conversions API, event_id eşleştirmesi, alan adı doğrulama, katalog bağlantısı ve kampanya, kitle, kreatif test yapısı.",
+    metrics: [
+      { value: "5 iş günü", label: "Teslim süresi" },
+      { value: "Pixel + CAPI", label: "Kapsam" },
+    ],
+  },
+  {
     meta: "Analitik",
     title: "GA4 ve Firebase kurulumu",
     description:
@@ -171,42 +201,22 @@ export const setups = [
       { value: "SKAN 4", label: "Sürüm" },
     ],
   },
-  {
-    meta: "User acquisition",
-    title: "UA kampanya kurulumu",
-    description:
-      "Google App Campaigns, Apple Search Ads, Meta ve TikTok hesap yapısı, hedef CPA ve ROAS teklif stratejisi, ülke ve kreatif test planı.",
-    metrics: [
-      { value: "2 hafta", label: "Kurulum ve öğrenme" },
-      { value: "D7 ROAS", label: "Ana hedef" },
-    ],
-  },
-  {
-    meta: "Raporlama",
-    title: "Veri ambarı ve panolar",
-    description:
-      "MMP ham verisi, reklam maliyetleri ve gelirin BigQuery'de birleştirilmesi; cohort, LTV ve kanal bazında Looker Studio panoları.",
-    metrics: [
-      { value: "3 hafta", label: "Teslim süresi" },
-      { value: "Günlük", label: "Veri yenileme" },
-    ],
-  },
 ];
 
 export const posts = [
+  {
+    category: "Google Ads",
+    title: "Google Ads gelişmiş dönüşümler: kurulum ve sık yapılan hatalar",
+    excerpt: "GTM ile hash'lenmiş e-posta göndermek, Consent Mode v2 ile birlikte çalıştırmak ve tanılama ekranında durumu doğrulamak.",
+    date: "22 Kasım 2026",
+    readTime: "8 dk",
+  },
   {
     category: "SKAN",
     title: "SKAN 4 conversion value şeması nasıl tasarlanır?",
     excerpt: "64 fine değeri gelir aralıklarına mı, event'lere mi ayırmalı? Abonelik ve oyun uygulamaları için iki örnek şema.",
     date: "18 Kasım 2026",
     readTime: "9 dk",
-  },
-  {
-    category: "MMP",
-    title: "AppsFlyer, Adjust ve Singular: hangisi kimin için?",
-    excerpt: "Fiyatlandırma, ham veri erişimi, fraud koruması ve SKAN desteği açısından üç MMP'nin karşılaştırması.",
-    date: "4 Kasım 2026",
-    readTime: "8 dk",
   },
   {
     category: "Etiketleme",
@@ -218,6 +228,8 @@ export const posts = [
 ];
 
 export const serviceOptions = [
+  "Google Ads kurulumu ve yönetimi",
+  "Meta Ads kurulumu ve yönetimi",
   "User acquisition",
   "Performans pazarlaması",
   "Analytics kurulumu (GA4 / Firebase)",
