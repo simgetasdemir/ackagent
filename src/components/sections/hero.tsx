@@ -23,8 +23,9 @@ export function Hero() {
           Dijitalde ölçülebilir büyüme
         </h1>
         <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-neutral-300 md:text-xl">
-          Performans pazarlaması ve user acquisition ajansı. Analytics, tag
-          manager, MMP ve SKAN kurulumundan kampanya yönetimine kadar tek ekip.
+          Reklam kurulumu ve performans pazarlaması ajansı. Google Ads ve Meta
+          Ads hesaplarınızı doğru ölçümlemeyle kurar, analytics, tag manager,
+          MMP ve SKAN tarafını tamamlar, kampanyaları büyütürüz.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <ButtonLink href="/#hizmetler" size="lg" className="w-full sm:w-auto">

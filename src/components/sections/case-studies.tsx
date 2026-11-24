@@ -9,7 +9,7 @@ export function Setups() {
         <SectionHeading
           eyebrow="Kurulumlar"
           title="Net kapsam, net teslim süresi"
-          description="Her kurulumun sonunda neyi teslim ettiğimizi ve ne kadar sürdüğünü baştan yazıyoruz. Kurulumlar tek başına da alınabilir, UA yönetimiyle birlikte de."
+          description="Her kurulumun sonunda neyi teslim ettiğimizi ve ne kadar sürdüğünü baştan yazıyoruz. Kurulumlar tek başına da alınabilir, kampanya yönetimiyle birlikte de."
         />
         <HoverEffect items={setups} className="-mx-2 mt-4" />
       </Container>

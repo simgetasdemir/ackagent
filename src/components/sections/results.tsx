@@ -41,8 +41,8 @@ export function Results() {
         <div>
           <SectionHeading
             eyebrow="Hizmetler"
-            title="Ölçümden büyümeye, tek ekip"
-            description="Önce analytics, tag manager ve MMP kurulumunu doğru yapıyor, sonra bu veriyle user acquisition ve performans kampanyalarını yönetiyoruz."
+            title="Reklam kurulumundan büyümeye, tek ekip"
+            description="Google Ads ve Meta Ads hesaplarını dönüşüm takibiyle birlikte sıfırdan kuruyor, analytics, tag manager ve MMP tarafını tamamlıyor, sonra bu veriyle kampanyaları yönetiyoruz."
           />
           <ol className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2">
             {results.map((r) => (
