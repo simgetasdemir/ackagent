@@ -82,8 +82,8 @@ export function Contact() {
         <div>
           <SectionHeading
             eyebrow="İletişim"
-            title="Ücretsiz hesap analizi isteyin"
-            description="Formu doldurun; bir sonraki iş günü içinde sizi arayalım ve reklam hesaplarınıza okuma yetkisi için kısa bir yönlendirme gönderelim. Analiz 48 saat içinde PDF olarak gelir."
+            title="Ücretsiz ölçüm denetimi isteyin"
+            description="Formu doldurun; bir sonraki iş günü içinde sizi arayalım. GA4, GTM ve MMP hesaplarınıza okuma yetkisiyle bakar, eksik event'leri ve SKAN sorunlarını 48 saat içinde PDF olarak paylaşırız."
           />
           <dl className="mt-10 space-y-5 text-sm">
             {[
@@ -160,7 +160,7 @@ export function Contact() {
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="Örn. Trendyol dışındaki kendi sitemizden aylık 300 sipariş almak istiyoruz, şu an 90 civarındayız."
+                  placeholder="Örn. iOS ve Android uygulamamız için AppsFlyer kurulumu ve SKAN şeması gerekiyor; ardından aylık 40 bin install hedefliyoruz."
                 />
               </Field>
               <input type="text" name="fax" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
@@ -180,7 +180,7 @@ export function Contact() {
               )}
               <Button type="submit" size="lg" variant="accent" className="w-full" disabled={status.state === "sending"}>
                 {status.state === "sending" && <IconLoader2 className="size-4 animate-spin" />}
-                {status.state === "sending" ? "Gönderiliyor" : "Analiz talebini gönder"}
+                {status.state === "sending" ? "Gönderiliyor" : "Denetim talebini gönder"}
               </Button>
             </form>
           )}

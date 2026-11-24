@@ -14,7 +14,7 @@ const columns = [
     title: "Kurumsal",
     links: [
       { name: "Hakkımızda", link: "/#hakkimizda" },
-      { name: "Başarı Hikayeleri", link: "/#basari-hikayeleri" },
+      { name: "Kurulumlar", link: "/#kurulumlar" },
       { name: "Çözümler", link: "/#cozumler" },
       { name: "Blog", link: "/#blog" },
     ],
@@ -44,7 +44,7 @@ export function Footer() {
         <div>
           <NavbarLogo />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-neutral-400">
-            Veri odaklı dijital pazarlama ajansı. {contact.address}
+            Performans pazarlaması ve user acquisition ajansı. {contact.address}
           </p>
           <div className="mt-6 flex gap-2">
             {socials.map(({ name, icon: Icon }) => (

@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ACK Dijital Ajans | Veri odaklı dijital pazarlama",
+  title: "ACK Dijital Ajans | Performans pazarlaması ve user acquisition",
   description:
-    "Performans pazarlaması, veri analitiği, dönüşüm optimizasyonu ve yapay zeka destekli çözümler. ACK Dijital Ajans, İstanbul.",
+    "User acquisition, performans pazarlaması, GA4 ve Google Tag Manager kurulumu, MMP entegrasyonu ve SKAN mapping. ACK Dijital Ajans, İstanbul.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

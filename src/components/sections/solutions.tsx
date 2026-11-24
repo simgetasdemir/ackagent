@@ -10,7 +10,7 @@ export function Solutions() {
         <SectionHeading
           eyebrow="Çözümler"
           title="Yapay zeka destekli çözümler"
-          description="Müşterilerimiz için geliştirdiğimiz üç araç. Hepsi ajans hizmetimize dahildir; tekrar eden işi yazılıma bırakıp zamanımızı stratejiye ayırıyoruz."
+          description="UA ve ölçümleme işini hızlandırmak için geliştirdiğimiz üç araç. Hepsi hizmetlerimize dahildir; tekrar eden işi yazılıma bırakıp zamanımızı stratejiye ayırıyoruz."
         />
         <div className="mt-16 space-y-6">
           {solutions.map((s) => (

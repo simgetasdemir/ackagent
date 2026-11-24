@@ -7,14 +7,14 @@ function DashboardVisual() {
     <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-ink-2 to-ink p-6">
       <div className="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full bg-accent/25 blur-3xl" />
       <div className="relative flex items-center justify-between text-xs text-neutral-400">
-        <span>Kanal bazında gelir, son 12 hafta</span>
+        <span>Cohort performansı, son 12 hafta</span>
         <span className="rounded-full bg-emerald-500/15 px-2.5 py-1 font-semibold text-emerald-400">+%38</span>
       </div>
       <dl className="relative mt-6 grid grid-cols-3 gap-3">
         {[
           ["Harcama", "214.800 ₺"],
-          ["Gelir", "987.300 ₺"],
-          ["ROAS", "4,6"],
+          ["Install", "38.420"],
+          ["D7 ROAS", "%42"],
         ].map(([k, v]) => (
           <div key={k} className="flex flex-col-reverse gap-1 rounded-2xl border border-white/5 bg-white/[0.03] p-4">
             <dt className="text-xs text-neutral-500">{k}</dt>
@@ -28,7 +28,7 @@ function DashboardVisual() {
         ))}
       </div>
       <p className="relative mt-4 text-xs text-neutral-500">
-        Örnek pano. Bir e-ticaret müşterimizin anonimleştirilmiş verisidir.
+        Örnek pano, temsili verilerle.
       </p>
     </div>
   );
@@ -41,14 +41,13 @@ export function Results() {
         <div>
           <SectionHeading
             eyebrow="Hizmetler"
-            title="Veri odaklı stratejik sonuçlar"
-            description="Her işe ölçümlemeden başlıyoruz. Doğru veri olmadan bütçe kararı vermiyor, test etmeden ölçeklemiyoruz."
+            title="Ölçümden büyümeye, tek ekip"
+            description="Önce analytics, tag manager ve MMP kurulumunu doğru yapıyor, sonra bu veriyle user acquisition ve performans kampanyalarını yönetiyoruz."
           />
           <ol className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2">
-            {results.map((r, i) => (
+            {results.map((r) => (
               <li key={r.title}>
-                <span className="text-sm font-semibold text-accent-300">0{i + 1}</span>
-                <h3 className="mt-2 text-lg font-bold text-white">{r.title}</h3>
+                                <h3 className="mt-2 text-lg font-bold text-white">{r.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-400">{r.description}</p>
               </li>
             ))}
