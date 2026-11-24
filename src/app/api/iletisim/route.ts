@@ -4,7 +4,11 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+// Vercel gibi sunucusuz ortamlarda yalnızca /tmp yazılabilir (ve kalıcı değildir).
+// Kalıcı kayıt için bu fonksiyon bir veritabanı veya e-posta servisine bağlanmalı.
+const DATA_DIR = process.env.VERCEL
+  ? path.join("/tmp", "ack-data")
+  : path.join(process.cwd(), "data");
 const LEADS_FILE = path.join(DATA_DIR, "leads.json");
 
 // IP başına basit hız sınırı: 10 dakikada en fazla 5 başvuru.
@@ -69,7 +73,7 @@ export async function POST(request: Request) {
 
   const { name, email, phone, company, website, service, budget, message } =
     parsed.data;
-  await saveLead({
+  const record = {
     id: randomUUID(),
     createdAt: new Date().toISOString(),
     name,
@@ -80,7 +84,14 @@ export async function POST(request: Request) {
     service,
     budget,
     message,
-  });
+  };
+  try {
+    await saveLead(record);
+  } catch (err) {
+    console.error("Başvuru kaydedilemedi", err);
+  }
+  // Sunucu günlüklerinde (Vercel > Logs) her başvuru görünür.
+  console.log("Yeni başvuru", JSON.stringify(record));
 
   return Response.json(
     {
