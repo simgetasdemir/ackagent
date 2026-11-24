@@ -117,12 +117,12 @@ export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick:
 );
 
 export const NavbarLogo = () => (
-  <Link href="/" aria-label="ACK Dijital Ajans ana sayfa" className="flex h-10 shrink-0 items-center gap-2.5">
+  <Link href="/" aria-label="ACK Agency ana sayfa" className="flex h-10 shrink-0 items-center gap-2.5">
     <span className="flex size-8 items-center justify-center rounded-lg bg-cream text-[10px] font-extrabold tracking-tight text-ink">
       ACK
     </span>
     <span className="text-base font-bold tracking-tight text-cream">
-      ACK <span className="font-normal text-neutral-400">Dijital</span>
+      ACK <span className="font-normal text-neutral-400">Agency</span>
     </span>
   </Link>
 );
